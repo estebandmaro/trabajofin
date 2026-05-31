@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Productos - Charlot</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Requisito de accesibilidad: Enlace de salto oculto -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Charlot</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html" class="active">Nuestros Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <section class="hero">
+            <h1>Nuestra Vitrina Virtual</h1>
+            <p>Cada una de nuestras piezas es elaborada minuciosamente a mano de forma diaria. Explora nuestras especialidades.</p>
+        </section>
+
+        <!-- Requisito: Elemento padre que aplica CSS Grid y contiene al menos 5 imágenes -->
+        <div class="grid-galeria">
+            
+            <div class="tarjeta-producto">
+                <img src="img/producto1.jpg" alt="Pan de masa madre de corteza crujiente y rústica" class="grid-img">
+                <h3>Pan de Masa Madre</h3>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="img/producto2.jpg" alt="Croissants de mantequilla dorados con capas de hojaldre perfectas" class="grid-img">
+                <h3>Hojaldres Tradicionales</h3>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="img/producto3.jpg" alt="Torta fina de chocolate decorada artísticamente con frutos rojos" class="grid-img">
+                <h3>Pastelería de Autor</h3>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="img/producto4.jpg" alt="Galletas artesanales recién horneadas con abundantes chispas de chocolate" class="grid-img">
+                <h3>Galletas Caseras</h3>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="img/producto5.jpg" alt="Postre individual frío montado elegantemente en capas" class="grid-img">
+                <h3>Postres Fríos</h3>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Charlot Panadería y Pastelería - Tradición familiar en cada bocado.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Pedidos - Charlot Panadería y Pastelería</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Requisito de accesibilidad: Enlace de salto oculto -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Charlot</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Nuestros Productos</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <section class="hero">
+            <h1>Haz tu Pedido o Visítanos</h1>
+            <p>¿Tienes una celebración especial o deseas separar tus panes y postres favoritos? Escríbenos o acércate a nuestra sede.</p>
+        </section>
+
+        <!-- Requisito: Elemento padre aplicando Flexbox de dos columnas para el diseño -->
+        <div class="contacto-flex-container">
+            
+            <!-- Columna 1: Formulario accesible -->
+            <form class="formulario-contacto" action="#" method="POST">
+                <h2>Formulario de Pedidos</h2>
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Alejandra Benavides">
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="pedido">Detalles de tu pedido o mensaje:</label>
+                    <textarea id="pedido" name="pedido" rows="5" required placeholder="Cuéntanos qué delicia de nuestra vitrina deseas reservar..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+
+            <!-- Columna 2: Datos de interés e imagen obligatoria de la página -->
+            <div class="info-local">
+                <h2>Charlot en Pasto</h2>
+                <p><strong>Ubicación:</strong> Pasto, Nariño, Colombia</p>
+                <p><strong>Horarios de atención:</strong> Lunes a Sábado de 7:30 AM a 7:30 PM</p>
+                <p><em>La calidez de nuestra tradición familiar y pastelería fina, directo a tu mesa.</em></p>
+                
+                <!-- Requisito: Imagen de la tercera página estilizada con el Modelo de Caja -->
+                <img src="img/fachada-local.jpg" alt="Interior acogedor y vitrinas llenas de Charlot Panadería y Pastelería" class="box-model-img">
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Charlot Panadería y Pastelería - Tradición familiar en cada bocado.</p>
+    </footer>
+
+</body>
+</html>
